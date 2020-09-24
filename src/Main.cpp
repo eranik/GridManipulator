@@ -116,29 +116,29 @@ private:
 
 	static inline void update_diagonal(uint16_t * const girdHelper, const uint8_t row, const uint8_t col) noexcept
 	{
-			for (uint8_t i = 0; i < LEN; i++)
+		for (uint8_t i = 0; i < LEN; i++)
+		{
+			// down right
+			if (((row + i) < LEN) && ((col + i) < LEN))
 			{
-				// down right
-				if (((row + i) < LEN) && ((col + i) < LEN))
-				{
-					girdHelper[row + i] &=	~get_col_mask(col + i);
-				}
-				// down left
-				if (((row + i) < LEN) && ((col - i) >= 0))
-				{
-					girdHelper[row + i] &=	~get_col_mask(col - i);
-				}
-				// up right
-				if (((row - i) >= 0) && ((col + i) < LEN))
-				{
-					girdHelper[row - i] &=	~get_col_mask(col + i);
-				}
-				// up left
-				if (((row - i) >= 0) && ((col - i) >= 0))
-				{
-					girdHelper[row - i] &=	~get_col_mask(col - i);
-				}
+				girdHelper[row + i] &=	~get_col_mask(col + i);
 			}
+			// down left
+			if (((row + i) < LEN) && ((col - i) >= 0))
+			{
+				girdHelper[row + i] &=	~get_col_mask(col - i);
+			}
+			// up right
+			if (((row - i) >= 0) && ((col + i) < LEN))
+			{
+				girdHelper[row - i] &=	~get_col_mask(col + i);
+			}
+			// up left
+			if (((row - i) >= 0) && ((col - i) >= 0))
+			{
+				girdHelper[row - i] &=	~get_col_mask(col - i);
+			}
+		}
 	}
 
 	static inline bool grid_safety_check(const unsigned char grid[]) noexcept
