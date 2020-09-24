@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hamid/code/cpp/GridManipulator/src/Main.cpp
+iostream
+-
+vector
+-
+iomanip
+-
+cstdarg
+-
+bitset
+-
+tuple
+-
+fstream
+-
+

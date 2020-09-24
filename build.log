@@ -1,0 +1,14 @@
+-- The CXX compiler identification is AppleClang 12.0.0.12000032
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/hamid/code/cpp/GridManipulator/Release
+Scanning dependencies of target my-app
+[ 50%] Building CXX object CMakeFiles/my-app.dir/src/Main.cpp.o
+[100%] Linking CXX executable my-app
+[100%] Built target my-app
