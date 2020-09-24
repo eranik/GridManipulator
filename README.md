@@ -1,5 +1,9 @@
 # GridManipulator
 
+**I've intentionally added everything, including binaries, to this repo.
+The binaries have been built on MacOS.**
+
+
 ## Source
 ```
 ./src/Main.cpp
