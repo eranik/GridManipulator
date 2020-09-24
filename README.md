@@ -1,23 +1,14 @@
-# clean-cpp
+# GridManipulator
 
+## Source
+```
+./src/Main.cpp
+```
 
-### The no clutter base code for C++ projects with cmake.
-
-This is a base code to be used for new C++ projets.
-
-### Features
-Provides following features:
-* Shows duration fo each operation.
-* Showing messages in termianl and logging it to **build.log**.
-* **Simply build** the project: **./build**
-* **Clean the project** with a simple argument: **./build c**, ./build -c, ./build --clean
-* **Full build** (clean, then build) the project with a simple argument: **./build f**, ./build -f, ./build --full
-
-After building the app, named my-app, will be copied to root directory of the project.
-
-A useful CMakeLists.txt has been written for the project.
-
-### VIM friendly development
-It's recommended to use this project inside VIM:
-1. **vim -p ./build.log ./src/Main.cpp**
-2. Use vim command mode to build: **:!./build**
+## Notes
+- I've bistset only for printing.
+- input.binary is the simple binary input, including { 0xff, 0x11, 0x12 }.
+- Uses C++17 (structured bindings, constexpr SFIANE, static inline).
+- If it doesn't build on Windows, just take a look at CMakeLists.txt and do a slight modification.
+- To do a full build on Linux and MacOS use: ```./build f ```
+- To have a simple run on Linux and MacOS use: ```./run.sh ```
